@@ -4,14 +4,26 @@
   gap: 15px;
   grid-template-columns: repeat(6, 1fr);
 }
-.container section {
-  background-color: rgb(196, 203, 194);
-}
 .container .item-2 {
   grid-area: 1/1/3/5;
+  background-color: rgb(69, 130, 94);
+  background-image: url(/images/block.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: grid;
+  justify-self: center;
+  align-items: center;
+  height: 500px;
+}
+.container .item-2 span {
+  color: white;
+  font-size: 50px;
+  margin: 5%;
 }
 .container .item-3 {
   grid-area: 1/5/3/7;
+  background-image: url(/images/block1img.jpg);
+  background-size: cover;
 }
 .container .item-4 {
   grid-area: 3/3/4/5;
@@ -121,6 +133,11 @@
 }
 .block-3 .item-7 {
   grid-area: 2/1/3/3;
+  background-color: aqua;
+  border-radius: 5%;
+}
+.block-3 .item-7 img {
+  border-radius: 5%;
 }
 .block-3 .item-8 {
   grid-area: 2/3/3/5;
@@ -163,17 +180,23 @@
   border-radius: 5px;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .container {
     background: rgb(250, 248, 244);
     display: block;
     gap: 15px;
   }
+  .item-2 {
+    font-size: 30px;
+    margin: 0 5%;
+  }
+  .item-3 {
+    margin: 0 5%;
+  }
   .block-3 {
     background: rgb(250, 248, 244);
     display: block;
     gap: 15px;
-    padding: 10%;
   }
 }
 
