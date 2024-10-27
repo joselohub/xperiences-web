@@ -1,25 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 header {
-  display: flex;
-  justify-content: space-around;
+  font-family: Montserrat;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
-header .logo-img {
-  width: 30%;
-}
-header nav {
+header .navigation {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header nav ul {
+header .navigation ul {
   display: flex;
 }
-header nav ul li {
+header .navigation ul li {
   list-style: none;
   margin: 20px;
 }
-header nav ul li a {
+header .navigation ul li a {
   text-decoration: none;
+  color: rgb(149, 116, 69);
+  font-weight: 500;
 }
 
 .main-container {
@@ -369,7 +373,6 @@ header nav ul li a {
 }
 .main-container .block-4 .comment {
   color: rgb(255, 255, 255);
-  margin: 15%;
 }
 .main-container .block-5 {
   display: grid;
@@ -438,6 +441,15 @@ header nav ul li a {
   align-items: center;
   color: #6f4b3a;
 }
+.main-container .block-5 .item-24 .contact-button button {
+  border: 2px solid rgb(149, 116, 69);
+  border-radius: 20px;
+  background-color: rgb(250, 248, 244);
+  color: #6f4b3a;
+  margin: 6%;
+  width: 90%;
+  padding: 5px;
+}
 .main-container .block-5 .item-25 {
   grid-area: 3/1/4/7;
   display: flex;
@@ -447,31 +459,32 @@ header nav ul li a {
   font-family: "Times New Roman", Times, serif;
   font-size: 13vw;
 }
+.main-container .block-6 .activityDescription {
+  margin: 5%;
+}
 .main-container .block-6 .activityDescription h2 {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #6f4b3a;
   font-size: xx-large;
-  margin: 40px;
+  margin: 5%;
 }
 .main-container .block-6 .activityDescription .itinerarios {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 5% 10% 5% 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5%;
 }
 .main-container .block-6 .activityDescription .itinerarios .itinerario {
-  margin: 1.2rem;
   border: 2px solid rgb(69, 130, 94);
-  width: 180px;
-  height: 150px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15% 5% 15% 5%;
   color: rgb(69, 130, 94);
-  display: block;
+  display: grid;
 }
 .main-container .block-6 .activityDescription .itinerarios .itinerario .itinerario-text {
-  margin-top: 15px;
+  margin-top: 3%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -483,7 +496,7 @@ header nav ul li a {
   border-radius: 10px;
 }
 .main-container .block-6 .activityDescription .itinerarios .itinerario .img-and-description img {
-  width: 25px;
+  width: 20%;
 }
 .main-container .block-6 .activityDescription .itinerarios .itinerario .img-and-description p {
   display: flex;
@@ -532,6 +545,19 @@ header nav ul li a {
 }
 
 @media only screen and (max-width: 960px) {
+  .header-modi {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-modi .logo-img {
+    display: grid;
+  }
+  .header-modi .navigation ul {
+    padding: 0;
+  }
   .main-container .block-1 {
     display: grid;
     gap: 15px;
@@ -598,10 +624,65 @@ header nav ul li a {
   .main-container .block-5 {
     display: block;
   }
+  .main-container .block-6 .activityDescription .activity-content {
+    display: block;
+  }
+  .main-container .block-6 .itinerarios {
+    padding: 5% 10% 5% 10%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 5%;
+  }
+  .main-container .block-6 .itinerarios .itinerario {
+    border: 2px solid rgb(69, 130, 94);
+    border-radius: 10px;
+    padding: 15% 5% 15% 5%;
+    color: rgb(69, 130, 94);
+    display: grid;
+  }
+  .main-container .block-6 .itinerarios .itinerario .itinerario-text {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+  }
+  .main-container .block-6 .itinerarios .itinerario .img-and-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+  }
+  .main-container .block-6 .itinerarios .itinerario .img-and-description img {
+    width: 10%;
+  }
+  .main-container .block-6 .itinerarios .itinerario .img-and-description p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+  }
 }
 @media only screen and (max-width: 370px) {
+  .header-modi {
+    display: flex;
+    background-color: rgb(248, 213, 160);
+    padding: 2%;
+  }
+  .header-modi .navigation {
+    width: 100%;
+  }
+  .header-modi .navigation ul {
+    padding: 0;
+  }
+  .header-modi .navigation ul li {
+    margin: 2%;
+  }
   .main-container .block-1 {
     display: block;
+  }
+  .main-container .block-1 .item-2 {
+    width: 100%;
   }
   .main-container .item-3 {
     display: none;

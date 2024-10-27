@@ -8,13 +8,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 header{
-    display: flex;
-    justify-content: space-around;
-    .logo-img{
-        width: 30%;
-    }
-    nav{
+    font-family:Montserrat ;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    .navigation{
         display: flex;
         align-items:center;
         justify-content: center;
@@ -27,6 +29,8 @@ header{
                 
                 a{
                     text-decoration: none;
+                    color: rgb(149,116,69);
+                    font-weight: 500;
                 }
             }
         }
@@ -459,7 +463,7 @@ font-family: Arial, Helvetica, sans-serif;
         }
         .comment{
             color: rgb(255, 255, 255);
-            margin: 15%;
+            
         }
     }
     
@@ -530,6 +534,15 @@ font-family: Arial, Helvetica, sans-serif;
                 justify-content: center;
                 align-items: center;
                 color: #6f4b3a;
+                button{
+                    border: 2px solid rgb(149,116,69);
+                    border-radius: 20px;
+                    background-color:rgb(250, 248, 244) ;
+                    color: #6f4b3a;
+                    margin: 6%;
+                    width: 90%;
+                    padding: 5px;
+                }
             }
         }
         .item-25{
@@ -547,30 +560,30 @@ font-family: Arial, Helvetica, sans-serif;
     .block-6{
 
         .activityDescription{
+            margin: 5%;
             h2{
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: #6f4b3a;
                 font-size: xx-large;
-                margin: 40px;
+                margin: 5%;
             }
             .itinerarios{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                padding: 5% 10% 5% 10%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 5%;
                 
                 .itinerario{
-                    margin: 1.2rem;
-                    border: 2px solid rgb(69, 130, 94);; 
-                    width: 180px;
-                    height: 150px;
+                    border: 2px solid rgb(69, 130, 94); 
                     border-radius: 10px;
-                    padding: 20px;
+                    padding: 15% 5% 15% 5%; 
                     color:rgb(69, 130, 94);
-                    display: block;
+                    display: grid;
+
                     .itinerario-text{
-                        margin-top: 15px;
+                        margin-top: 3%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -583,7 +596,7 @@ font-family: Arial, Helvetica, sans-serif;
                         border-radius: 10px;
 
                         img{
-                            width: 25px;
+                           width: 20%;
                             
                         }
                         p{
@@ -653,6 +666,24 @@ font-family: Arial, Helvetica, sans-serif;
 
     
     @media only screen and (max-width: 960px) {
+
+        .header-modi{
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            justify-content: center;
+            align-items: center;
+            // grid-template-columns: 1fr;
+            .logo-img{
+                display: grid;
+             }
+            .navigation{
+                ul{
+                    padding: 0;
+                }
+            }
+    
+        }
         .main-container{
             .block-1{
                 display: grid;
@@ -728,14 +759,87 @@ font-family: Arial, Helvetica, sans-serif;
             .block-5{
                 display: block;
             }
+            .block-6{
+                .activityDescription{
+                    .activity-content{
+                        display: block;
+                        
+                    }
+                }
+
+                .itinerarios{
+                    padding: 5% 10% 5% 10%;
+                    display: grid;
+                    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+                    gap: 5%;
+                    
+                    .itinerario{
+                        border: 2px solid rgb(69, 130, 94); 
+                        border-radius: 10px;
+                        padding: 15% 5% 15% 5%; 
+                        color:rgb(69, 130, 94);
+                        display: grid;
+    
+                        .itinerario-text{
+                            margin-top: 3%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: small;
+                        }
+    
+                        .img-and-description{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            border-radius: 10px;
+    
+                            img{
+                               width: 10%;
+                                
+                            }
+                            p{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-size: small;
+                            }
+    
+                        }
+                    }
+    
+                }
+            }
         }
         
     }
     @media only screen and (max-width: 370px){
+    .header-modi{
+        display: flex;
+        background-color: rgb(248, 213, 160);
+        padding: 2%;
+        // grid-template-columns: 1fr;
+        // .logo-img{
+
+        // }
+        .navigation{
+            width: 100%;
+            ul{
+                padding: 0;
+                li{
+                    margin: 2%;
+                }
+            }
+        }
+
+    }
     .main-container{  
 
             .block-1{
                 display: block;
+                .item-2{
+                    width: 100%;
+                }
             }
             .item-3{
                 display: none;
