@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://db.onlinewebfonts.com/c/df4f2ad3e800c192957a66008bec69a1?family=KoningDisplay+Regular");
 html {
   scroll-behavior: smooth;
 }
 
 header {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+header .logo-img {
+  width: 50%;
 }
 header .navigation {
   display: flex;
@@ -22,8 +26,9 @@ header .navigation ul li {
 }
 header .navigation ul li a {
   text-decoration: none;
-  color: rgb(149, 116, 69);
+  color: #6f4b3a;
   font-weight: 500;
+  font-size: 1.3vw;
 }
 
 .main-container {
@@ -33,13 +38,12 @@ header .navigation ul li a {
 .main-container .block-1 {
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: auto auto;
 }
 .main-container .block-1 .item-2 {
-  grid-area: 1/1/3/5;
   background-color: rgb(69, 130, 94);
   background-image: url(../images/block.jpg);
-  background-size: auto;
+  background-size: cover;
   background-blend-mode: multiply;
   display: grid;
   justify-self: center;
@@ -50,64 +54,66 @@ header .navigation ul li a {
   font-size: 50px;
   margin: 5%;
 }
-.main-container .block-1 .item-3 {
-  grid-area: 1/5/3/7;
-}
 .main-container .block-1 .item-4 {
-  grid-area: 3/3/4/5;
+  grid-area: 2/1/3/4;
   display: grid;
-  margin: 15%;
   justify-content: center;
+  margin: 8%;
 }
 .main-container .block-1 .item-4 .block-button {
-  width: 200px;
+  width: 100%;
   color: rgb(255, 255, 255);
   background-color: rgb(149, 116, 69);
   border: none;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px 30px 5px 30px;
+  font-size: 1.7vw;
 }
 .main-container .block-2 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
 .main-container .block-2 .item-5 {
-  grid-area: 1/1/5/3;
+  grid-area: 1/1/3/3;
   margin: 10%;
 }
 .main-container .block-2 .item-5 img {
   border-radius: 50%;
 }
 .main-container .block-2 .item-6 {
-  grid-area: 1/3/5/7;
+  grid-area: 1/3/3/7;
   display: grid;
   justify-items: center;
   align-items: center;
   padding: 5%;
+  font-family: "KoningDisplay Regular", sans-serif;
+  font-size: 1.5rem;
 }
 .main-container .block-3 {
   display: grid;
   gap: 40px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 10%;
 }
 .main-container .block-3 .item-7h2 {
-  grid-area: 1/1/2/7;
+  grid-area: 1/1/2/4;
   display: grid;
   justify-items: center;
   align-items: center;
   margin: 3%;
+  font-family: "KoningDisplay Regular", sans-serif;
+  font-size: 2.5rem;
+  color: #6f4b3a;
 }
-.main-container .block-3 .item-7 {
-  grid-area: 2/1/3/3;
+.main-container .block-3 .card {
   position: relative;
   margin-bottom: 20%;
 }
-.main-container .block-3 .item-7 .image-item {
+.main-container .block-3 .card .image-item {
   width: 100%;
   border-radius: 20px;
 }
-.main-container .block-3 .item-7 .content-item {
+.main-container .block-3 .card .content-item {
   position: absolute;
   background-color: rgb(255, 255, 255);
   width: 70%;
@@ -115,224 +121,30 @@ header .navigation ul li a {
   justify-items: center;
   align-content: center;
   height: 50%;
-  border-radius: 20px;
+  border-radius: 1vw;
   top: 66%;
   left: 15%;
   padding: 5px;
 }
-.main-container .block-3 .item-8 {
-  grid-area: 2/3/3/5;
-  position: relative;
-  margin-bottom: 20%;
-}
-.main-container .block-3 .item-8 .image-item {
-  width: 100%;
-  border-radius: 20px;
-}
-.main-container .block-3 .item-8 .content-item {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 70%;
-  display: block;
-  justify-items: center;
-  align-content: center;
-  height: 50%;
-  border-radius: 20px;
-  top: 66%;
-  left: 15%;
-  padding: 5px;
-}
-.main-container .block-3 .item-9 {
-  grid-area: 2/5/3/7;
-  position: relative;
-  margin-bottom: 20%;
-}
-.main-container .block-3 .item-9 .image-item {
-  width: 100%;
-  border-radius: 20px;
-}
-.main-container .block-3 .item-9 .content-item {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 70%;
-  display: block;
-  justify-items: center;
-  align-content: center;
-  height: 50%;
-  border-radius: 20px;
-  top: 66%;
-  left: 15%;
-  padding: 5px;
-}
-.main-container .block-3 .item-10 {
-  grid-area: 3/1/4/3;
-  position: relative;
-  margin-bottom: 20%;
-}
-.main-container .block-3 .item-10 .image-item {
-  width: 100%;
-  border-radius: 20px;
-}
-.main-container .block-3 .item-10 .content-item {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 70%;
-  display: block;
-  justify-items: center;
-  align-content: center;
-  height: 50%;
-  border-radius: 20px;
-  top: 66%;
-  left: 15%;
-  padding: 5px;
-}
-.main-container .block-3 .item-11 {
-  grid-area: 3/3/4/5;
-  position: relative;
-  margin-bottom: 20%;
-}
-.main-container .block-3 .item-11 .image-item {
-  width: 100%;
-  border-radius: 20px;
-}
-.main-container .block-3 .item-11 .content-item {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 70%;
-  display: block;
-  justify-items: center;
-  align-content: center;
-  height: 50%;
-  border-radius: 20px;
-  top: 66%;
-  left: 15%;
-  padding: 5px;
-}
-.main-container .block-3 .item-12 {
-  grid-area: 3/5/4/7;
-  position: relative;
-  margin-bottom: 20%;
-}
-.main-container .block-3 .item-12 .image-item {
-  width: 100%;
-  border-radius: 20px;
-}
-.main-container .block-3 .item-12 .content-item {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 70%;
-  display: block;
-  justify-items: center;
-  align-content: center;
-  height: 50%;
-  border-radius: 20px;
-  top: 66%;
-  left: 15%;
-  padding: 5px;
-}
-.main-container .block-3 .item-13 {
-  grid-area: 4/1/5/3;
-  position: relative;
-  margin-bottom: 20%;
-}
-.main-container .block-3 .item-13 .image-item {
-  width: 100%;
-  border-radius: 20px;
-}
-.main-container .block-3 .item-13 .content-item {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 70%;
-  display: block;
-  justify-items: center;
-  align-content: center;
-  height: 50%;
-  border-radius: 20px;
-  top: 66%;
-  left: 15%;
-  padding: 5px;
-}
-.main-container .block-3 .item-14 {
-  grid-area: 4/3/5/5;
-  position: relative;
-  margin-bottom: 20%;
-}
-.main-container .block-3 .item-14 .image-item {
-  width: 100%;
-  border-radius: 20px;
-}
-.main-container .block-3 .item-14 .content-item {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 70%;
-  display: block;
-  justify-items: center;
-  align-content: center;
-  height: 50%;
-  border-radius: 20px;
-  top: 66%;
-  left: 15%;
-  padding: 5px;
-}
-.main-container .block-3 .item-15 {
-  grid-area: 4/5/5/7;
-  position: relative;
-  margin-bottom: 20%;
-}
-.main-container .block-3 .item-15 .image-item {
-  width: 100%;
-  border-radius: 20px;
-}
-.main-container .block-3 .item-15 .content-item {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 70%;
-  display: block;
-  justify-items: center;
-  align-content: center;
-  height: 50%;
-  border-radius: 20px;
-  top: 66%;
-  left: 15%;
-  padding: 5px;
-}
-.main-container .block-3 .item-16 {
-  grid-area: 5/1/6/3;
-  position: relative;
-  margin-bottom: 20%;
-}
-.main-container .block-3 .item-16 .image-item {
-  width: 100%;
-  border-radius: 20px;
-  margin-bottom: 20%;
-}
-.main-container .block-3 .item-16 .content-item {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 70%;
-  display: block;
-  justify-items: center;
-  align-content: center;
-  height: 50%;
-  border-radius: 20px;
-  top: 66%;
-  left: 15%;
-  padding: 5px;
+.main-container .block-3 .card .content-item p {
+  font-size: 1.2vw;
+  color: #6f4b3a;
+  font-family: "KoningDisplay Regular", sans-serif;
 }
 .main-container .block-3 .buttom-item-17 {
-  grid-area: 6/1/7/7;
+  grid-area: auto/1/auto/4;
   display: grid;
-  justify-items: center;
-  align-items: center;
+  justify-content: center;
+  margin: 8%;
 }
-.main-container .block-3 .buttom-item-17 button {
-  width: 200px;
+.main-container .block-3 .buttom-item-17 .block-button {
+  width: 100%;
   color: rgb(255, 255, 255);
   background-color: rgb(149, 116, 69);
   border: none;
   border-radius: 5px;
-  padding: 10px;
-  padding: 5px;
+  padding: 5px 30px 5px 30px;
+  font-size: 1.7vw;
 }
 .main-container .block-4 {
   display: grid;
@@ -352,6 +164,8 @@ header .navigation ul li a {
   align-items: center;
   margin: 5%;
   color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-family: "KoningDisplay Regular", sans-serif;
 }
 .main-container .block-4 .item-18 {
   grid-area: 3/1/5/3;
@@ -373,10 +187,12 @@ header .navigation ul li a {
 }
 .main-container .block-4 .comment {
   color: rgb(255, 255, 255);
+  font-size: 1.2rem;
 }
 .main-container .block-5 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  font-size: 1.3rem;
 }
 .main-container .block-5 .item-21 {
   grid-area: 1/1/2/7;
@@ -456,7 +272,7 @@ header .navigation ul li a {
   justify-content: center;
   align-items: center;
   color: #6f4b3a;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "KoningDisplay Regular", Times, serif;
   font-size: 13vw;
 }
 .main-container .block-6 .activityDescription {
@@ -467,7 +283,7 @@ header .navigation ul li a {
   align-items: center;
   justify-content: center;
   color: #6f4b3a;
-  font-size: xx-large;
+  font-size: 3rem;
   margin: 5%;
 }
 .main-container .block-6 .activityDescription .itinerarios {
@@ -477,10 +293,10 @@ header .navigation ul li a {
   gap: 5%;
 }
 .main-container .block-6 .activityDescription .itinerarios .itinerario {
-  border: 2px solid rgb(69, 130, 94);
+  border: 2px solid green;
   border-radius: 10px;
   padding: 15% 5% 15% 5%;
-  color: rgb(69, 130, 94);
+  color: green;
   display: grid;
 }
 .main-container .block-6 .activityDescription .itinerarios .itinerario .itinerario-text {
@@ -488,6 +304,7 @@ header .navigation ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.2vw;
 }
 .main-container .block-6 .activityDescription .itinerarios .itinerario .img-and-description {
   display: flex;
@@ -502,6 +319,7 @@ header .navigation ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1vw;
 }
 .main-container .block-6 .activityDescription .activity-content {
   display: grid;
@@ -517,25 +335,27 @@ header .navigation ul li a {
 .main-container .block-6 .activityDescription .activity-content .text-content {
   padding: 10px;
   display: flex;
+  font-size: 1.3rem;
   flex-direction: column;
 }
 .main-container .block-6 .activityDescription .activity-content .text-content .text-content-head {
-  margin: 20px;
+  margin-bottom: 3%;
   color: #6f4b3a;
 }
 .main-container .block-6 .activityDescription .button-activity-content {
-  display: flex;
-  align-items: center;
+  grid-area: 2/1/3/4;
+  display: grid;
   justify-content: center;
-  margin: 30px 0 100px 0;
+  margin: 8%;
 }
 .main-container .block-6 .activityDescription .button-activity-content button {
-  width: 200px;
+  width: 100%;
   color: rgb(255, 255, 255);
   background-color: rgb(149, 116, 69);
   border: none;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px 30px 5px 30px;
+  font-size: 1.7vw;
 }
 .main-container .block-7 {
   display: grid;
@@ -543,133 +363,161 @@ header .navigation ul li a {
 }
 .main-container .block-7 .item-36 {
   grid-area: 1/1/2/2;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 7%;
+}
+.main-container .block-7 .item-36 h2 {
+  font-family: "KoningDisplay Regular", Times, serif;
+  font-size: 3rem;
+  color: #6f4b3a;
+}
+.main-container .block-7 .item-36 P {
+  font-size: 1.3rem;
 }
 .main-container .block-7 .item-37 {
   grid-area: 1/2/2/3;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.main-container .block-7 .item-37 button {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(149, 116, 69);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.7vw;
+  padding: 2%;
+}
+.main-container .block-7 .item-37 .download-pdf-link-button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 .main-container .block-7 .images7 {
   grid-area: 2/1/3/3;
   display: flex;
 }
 .main-container .block-7 .images7 .item {
-  padding: 3%;
+  padding: 5%;
 }
 .main-container .block-7 .images7 .item img {
   border-radius: 50%;
 }
-
 @media only screen and (max-width: 960px) {
-  .header-modi {
+  .main-container .header-modi {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .header-modi .logo-img {
+  .main-container .header-modi .logo-img {
     display: grid;
   }
-  .header-modi .navigation ul {
+  .main-container .header-modi .navigation ul {
     padding: 0;
   }
-  .main-container .block-1 {
+  .main-container .main-container .block-1 {
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(6, 1fr);
   }
-  .main-container .block-1 .item-2 {
+  .main-container .main-container .block-1 .item-2 {
     grid-area: 1/1/3/7;
     font-size: 30px;
     margin: 0 5%;
   }
-  .main-container .block-1 .item-3 {
+  .main-container .main-container .block-1 .item-3 {
     display: none;
   }
-  .main-container .block-2 {
+  .main-container .main-container .block-2 {
     display: block;
   }
-  .main-container .block-3 {
+  .main-container .main-container .block-3 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
-  .main-container .block-3 .item-7h2 {
+  .main-container .main-container .block-3 .item-7h2 {
     grid-area: 1/1/2/7;
   }
-  .main-container .block-3 .item-7 {
+  .main-container .main-container .block-3 .item-7 {
     grid-area: 2/1/3/4;
   }
-  .main-container .block-3 .item-8 {
+  .main-container .main-container .block-3 .item-8 {
     grid-area: 2/4/3/7;
   }
-  .main-container .block-3 .item-9 {
+  .main-container .main-container .block-3 .item-9 {
     grid-area: 3/1/4/4;
   }
-  .main-container .block-3 .item-10 {
+  .main-container .main-container .block-3 .item-10 {
     grid-area: 3/4/4/7;
   }
-  .main-container .block-3 .item-11 {
+  .main-container .main-container .block-3 .item-11 {
     grid-area: 4/1/5/4;
   }
-  .main-container .block-3 .item-12 {
+  .main-container .main-container .block-3 .item-12 {
     grid-area: 4/4/5/7;
   }
-  .main-container .block-3 .item-13 {
+  .main-container .main-container .block-3 .item-13 {
     grid-area: 5/1/6/4;
   }
-  .main-container .block-3 .item-14 {
+  .main-container .main-container .block-3 .item-14 {
     grid-area: 5/4/6/7;
   }
-  .main-container .block-3 .item-15 {
+  .main-container .main-container .block-3 .item-15 {
     grid-area: 6/1/7/4;
   }
-  .main-container .block-3 .item-16 {
+  .main-container .main-container .block-3 .item-16 {
     grid-area: 6/4/7/7;
   }
-  .main-container .block-3 .buttom-item-17 {
+  .main-container .main-container .block-3 .buttom-item-17 {
     grid-area: 7/1/8/7;
   }
-  .main-container .block-3 section {
+  .main-container .main-container .block-3 section {
     margin-bottom: 20%;
   }
-  .main-container .block-4 {
+  .main-container .main-container .block-4 {
     display: block;
     padding: 10%;
   }
-  .main-container .block-5 {
+  .main-container .main-container .block-5 {
     display: block;
   }
-  .main-container .block-6 .activityDescription .activity-content {
+  .main-container .main-container .block-6 .activityDescription .activity-content {
     display: block;
   }
-  .main-container .block-6 .itinerarios {
+  .main-container .main-container .block-6 .itinerarios {
     padding: 5% 10% 5% 10%;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
     gap: 5%;
   }
-  .main-container .block-6 .itinerarios .itinerario {
+  .main-container .main-container .block-6 .itinerarios .itinerario {
     border: 2px solid rgb(69, 130, 94);
     border-radius: 10px;
     padding: 15% 5% 15% 5%;
     color: rgb(69, 130, 94);
     display: grid;
   }
-  .main-container .block-6 .itinerarios .itinerario .itinerario-text {
+  .main-container .main-container .block-6 .itinerarios .itinerario .itinerario-text {
     margin-top: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: small;
   }
-  .main-container .block-6 .itinerarios .itinerario .img-and-description {
+  .main-container .main-container .block-6 .itinerarios .itinerario .img-and-description {
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
   }
-  .main-container .block-6 .itinerarios .itinerario .img-and-description img {
+  .main-container .main-container .block-6 .itinerarios .itinerario .img-and-description img {
     width: 10%;
   }
-  .main-container .block-6 .itinerarios .itinerario .img-and-description p {
+  .main-container .main-container .block-6 .itinerarios .itinerario .img-and-description p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -677,102 +525,102 @@ header .navigation ul li a {
   }
 }
 @media only screen and (max-width: 370px) {
-  .header-modi {
+  .main-container .header-modi {
     display: flex;
     padding: 2%;
   }
-  .header-modi .navigation {
+  .main-container .header-modi .navigation {
     width: 100%;
   }
-  .header-modi .navigation ul {
+  .main-container .header-modi .navigation ul {
     padding: 0;
   }
-  .header-modi .navigation ul li {
+  .main-container .header-modi .navigation ul li {
     margin: 2%;
   }
-  .main-container .block-1 {
+  .main-container .main-container .block-1 {
     display: block;
   }
-  .main-container .block-1 .item-2 {
+  .main-container .main-container .block-1 .item-2 {
     width: 100%;
   }
-  .main-container .item-3 {
+  .main-container .main-container .item-3 {
     display: none;
   }
-  .main-container .block-3 {
+  .main-container .main-container .block-3 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
-  .main-container .block-3 .item-7h2 {
+  .main-container .main-container .block-3 .item-7h2 {
     grid-area: 1/1/2/7;
   }
-  .main-container .block-3 .item-7 {
+  .main-container .main-container .block-3 .item-7 {
     grid-area: 2/1/3/7;
   }
-  .main-container .block-3 .item-7 .image-item {
+  .main-container .main-container .block-3 .item-7 .image-item {
     display: none;
   }
-  .main-container .block-3 .item-8 {
+  .main-container .main-container .block-3 .item-8 {
     grid-area: 3/1/4/7;
   }
-  .main-container .block-3 .item-8 .image-item {
+  .main-container .main-container .block-3 .item-8 .image-item {
     display: none;
   }
-  .main-container .block-3 .item-9 {
+  .main-container .main-container .block-3 .item-9 {
     grid-area: 4/1/5/7;
   }
-  .main-container .block-3 .item-9 .image-item {
+  .main-container .main-container .block-3 .item-9 .image-item {
     display: none;
   }
-  .main-container .block-3 .item-10 {
+  .main-container .main-container .block-3 .item-10 {
     grid-area: 5/1/6/7;
   }
-  .main-container .block-3 .item-10 .image-item {
+  .main-container .main-container .block-3 .item-10 .image-item {
     display: none;
   }
-  .main-container .block-3 .item-11 {
+  .main-container .main-container .block-3 .item-11 {
     grid-area: 6/1/7/7;
   }
-  .main-container .block-3 .item-11 .image-item {
+  .main-container .main-container .block-3 .item-11 .image-item {
     display: none;
   }
-  .main-container .block-3 .item-12 {
+  .main-container .main-container .block-3 .item-12 {
     grid-area: 7/1/8/7;
   }
-  .main-container .block-3 .item-12 .image-item {
+  .main-container .main-container .block-3 .item-12 .image-item {
     display: none;
   }
-  .main-container .block-3 .item-13 {
+  .main-container .main-container .block-3 .item-13 {
     grid-area: 8/1/9/7;
   }
-  .main-container .block-3 .item-13 .image-item {
+  .main-container .main-container .block-3 .item-13 .image-item {
     display: none;
   }
-  .main-container .block-3 .item-14 {
+  .main-container .main-container .block-3 .item-14 {
     grid-area: 9/1/10/7;
   }
-  .main-container .block-3 .item-14 .image-item {
+  .main-container .main-container .block-3 .item-14 .image-item {
     display: none;
   }
-  .main-container .block-3 .item-15 {
+  .main-container .main-container .block-3 .item-15 {
     grid-area: 10/1/11/7;
   }
-  .main-container .block-3 .item-15 .image-item {
+  .main-container .main-container .block-3 .item-15 .image-item {
     display: none;
   }
-  .main-container .block-3 .item-16 {
+  .main-container .main-container .block-3 .item-16 {
     grid-area: 11/1/12/7;
   }
-  .main-container .block-3 .item-16 .image-item {
+  .main-container .main-container .block-3 .item-16 .image-item {
     display: none;
   }
-  .main-container .block-3 .buttom-item-17 {
+  .main-container .main-container .block-3 .buttom-item-17 {
     grid-area: 13/1/14/7;
   }
-  .main-container .block-3 section {
+  .main-container .main-container .block-3 section {
     margin-bottom: 20%;
   }
-  .main-container .block-4 {
+  .main-container .main-container .block-4 {
     display: block;
     padding: 2%;
   }
