@@ -28,7 +28,7 @@ header .navigation ul li a {
   text-decoration: none;
   color: #6f4b3a;
   font-weight: 500;
-  font-size: 1.3vw;
+  font-size: 1.2rem;
 }
 
 .main-container {
@@ -67,7 +67,7 @@ header .navigation ul li a {
   border: none;
   border-radius: 5px;
   padding: 5px 30px 5px 30px;
-  font-size: 1.7vw;
+  font-size: 1.8rem;
 }
 .main-container .block-2 {
   display: grid;
@@ -124,7 +124,7 @@ header .navigation ul li a {
   padding: 5px;
 }
 .main-container .cards .card .content-item p {
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   color: #6f4b3a;
   font-family: "KoningDisplay Regular", sans-serif;
 }
@@ -141,7 +141,7 @@ header .navigation ul li a {
   border: none;
   border-radius: 5px;
   padding: 5px 30px 5px 30px;
-  font-size: 1.7vw;
+  font-size: 1.8rem;
 }
 .main-container .block-4 {
   display: grid;
@@ -316,7 +316,7 @@ header .navigation ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 .main-container .block-6 .activityDescription .activity-content {
   display: grid;
@@ -352,7 +352,7 @@ header .navigation ul li a {
   border: none;
   border-radius: 5px;
   padding: 5px 30px 5px 30px;
-  font-size: 1.7vw;
+  font-size: 1.8rem;
 }
 .main-container .block-7 {
   display: grid;
@@ -412,9 +412,10 @@ header .navigation ul li a {
     display: grid;
     justify-self: center;
     align-items: center;
+    width: 30%;
   }
   header .navigation ul li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .main-container .block-1 {
     gap: 0;
@@ -431,9 +432,69 @@ header .navigation ul li a {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .main-container .block-2 .item-6 {
+    font-family: "KoningDisplay Regular", Times, serif;
+  }
   .main-container .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-family: "KoningDisplay Regular", Times, serif;
+  }
+  .main-container .cards .card .content-item p {
+    font-size: 2vw;
+    font-family: "KoningDisplay Regular", sans-serif;
+  }
+  .main-container .block-4 {
+    padding: 10% 0 10% 0;
+    display: block;
+  }
+  .main-container .block-4 .item-18 .name-people {
+    margin-top: 3%;
+  }
+  .main-container .block-4 .item-19 .name-people {
+    margin-top: 3%;
+  }
+  .main-container .block-4 .item-20 .name-people {
+    margin-top: 3%;
+  }
+  .main-container .block-5 {
+    display: block;
+  }
+  .main-container .block-6 .activityDescription h2 {
+    margin-top: 25%;
+  }
+  .main-container .block-6 .activityDescription .itinerarios {
+    padding: 2.5% 5% 2.5% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5%;
+  }
+  .main-container .block-6 .activityDescription .itinerarios .itinerario .itinerario-text {
+    font-size: 2vw;
+  }
+  .main-container .block-6 .activityDescription .itinerarios .itinerario .img-and-description p {
+    font-size: 2vw;
+  }
+  .main-container .block-6 .activityDescription .activity-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .main-container .block-7 {
+    display: block;
+  }
+  .main-container .block-7 .item-37 button {
+    font-size: 3vw;
+    margin: 5%;
+  }
+  .main-container .block-7 .images7 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container .block-7 .images7 .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
