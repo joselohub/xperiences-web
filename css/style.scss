@@ -198,7 +198,7 @@ font-family: Arial, Helvetica, sans-serif;
         grid-template-columns: repeat(6,1fr);
         width: 100%;
         min-height: 700px;
-        background-image: url(../images/width_1120.webp);
+        background-image: url(../images/contact-us.webp);
         background-color: rgb(140, 74, 39);
         opacity: 0.79;
         background-size:cover;
@@ -467,7 +467,7 @@ font-family: Arial, Helvetica, sans-serif;
                     background-color: rgb(149,116,69);
                     border: none;
                     border-radius: 5px;
-                    font-size:1.7vw ;
+                    font-size:1.8rem;
                     padding: 2%;
                    
                 }
@@ -491,15 +491,6 @@ font-family: Arial, Helvetica, sans-serif;
         }    
     }
 
-
-
-
-    
-
-    @media only screen and (max-width: 370px){
-    
-        
-    }
 }
 @media only screen and (max-width: 960px) {
 
@@ -689,7 +680,7 @@ font-family: Arial, Helvetica, sans-serif;
         //                 background-color: rgb(149,116,69);
         //                 border: none;
         //                 border-radius: 5px;
-                        font-size:3vw ;
+                        
         //                 padding: 2%;
                         margin:5%;
                        
@@ -719,5 +710,61 @@ font-family: Arial, Helvetica, sans-serif;
              }    
         }
         
+    }
+}
+
+
+@media only screen and (max-width: 455px){
+    header{
+        .logo-img{
+            width: 50%;
+        }
+        .navigation{
+            ul{
+                display: block;
+                padding: 0;
+                li{
+                    a{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        
+    }
+    .main-container{
+        .item-7h2{
+            padding: 8%;
+            font-size: 2rem;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: 1fr;
+            font-family: "KoningDisplay Regular", Times, serif;
+            padding: 0%;
+            .card{
+                .image-item{
+                    display: none;
+                    margin: 10%;
+                }
+                .content-item{
+                    background-color:rgb(250, 248, 244);
+                    // border-top: 2px solid #6f4b3a;
+                    padding: 0%;
+                    display: grid;
+                    
+                    
+                    .activity{
+                        font-size: 5vw;
+                        width: 100%;
+                        padding: 4%;
+                        font-family:"KoningDisplay Regular",sans-serif;
+                    }
+                    .activity-hour{
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }

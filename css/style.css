@@ -148,7 +148,7 @@ header .navigation ul li a {
   grid-template-columns: repeat(6, 1fr);
   width: 100%;
   min-height: 700px;
-  background-image: url(../images/width_1120.webp);
+  background-image: url(../images/contact-us.webp);
   background-color: rgb(140, 74, 39);
   opacity: 0.79;
   background-size: cover;
@@ -386,7 +386,7 @@ header .navigation ul li a {
   background-color: rgb(149, 116, 69);
   border: none;
   border-radius: 5px;
-  font-size: 1.7vw;
+  font-size: 1.8rem;
   padding: 2%;
 }
 .main-container .block-7 .item-37 .download-pdf-link-button a {
@@ -403,6 +403,7 @@ header .navigation ul li a {
 .main-container .block-7 .images7 .item img {
   border-radius: 50%;
 }
+
 @media only screen and (max-width: 960px) {
   header {
     display: grid;
@@ -483,7 +484,6 @@ header .navigation ul li a {
     display: block;
   }
   .main-container .block-7 .item-37 button {
-    font-size: 3vw;
     margin: 5%;
   }
   .main-container .block-7 .images7 {
@@ -495,6 +495,46 @@ header .navigation ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 455px) {
+  header .logo-img {
+    width: 50%;
+  }
+  header .navigation ul {
+    display: block;
+    padding: 0;
+  }
+  header .navigation ul li a {
+    font-size: 1rem;
+  }
+  .main-container .item-7h2 {
+    padding: 8%;
+    font-size: 2rem;
+  }
+  .main-container .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: "KoningDisplay Regular", Times, serif;
+    padding: 0%;
+  }
+  .main-container .cards .card .image-item {
+    display: none;
+    margin: 10%;
+  }
+  .main-container .cards .card .content-item {
+    background-color: rgb(250, 248, 244);
+    padding: 0%;
+    display: grid;
+  }
+  .main-container .cards .card .content-item .activity {
+    font-size: 5vw;
+    width: 100%;
+    padding: 4%;
+    font-family: "KoningDisplay Regular", sans-serif;
+  }
+  .main-container .cards .card .content-item .activity-hour {
+    display: none;
   }
 }
 
