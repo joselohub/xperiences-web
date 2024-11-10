@@ -3,6 +3,19 @@
 html {
   scroll-behavior: smooth;
 }
+html body .float-wa {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
 
 header {
   font-family: "Montserrat", sans-serif;
@@ -124,24 +137,10 @@ header .navigation ul li a {
   padding: 5px;
 }
 .main-container .cards .card .content-item p {
-  font-size: 1.4vw;
+  font-size: 1rem;
+  text-decoration: none;
   color: #6f4b3a;
   font-family: "KoningDisplay Regular", sans-serif;
-}
-.main-container .buttom-item-17 {
-  grid-area: auto/1/auto/4;
-  display: grid;
-  justify-content: center;
-  margin: 8%;
-}
-.main-container .buttom-item-17 .block-button {
-  width: 100%;
-  color: rgb(255, 255, 255);
-  background-color: rgb(149, 116, 69);
-  border: none;
-  border-radius: 5px;
-  padding: 5px 30px 5px 30px;
-  font-size: 1.8rem;
 }
 .main-container .block-4 {
   display: grid;
@@ -213,6 +212,10 @@ header .navigation ul li a {
 }
 .main-container .block-5 .item-22 p {
   margin: 6%;
+}
+.main-container .block-5 .item-22 p a {
+  text-decoration: none;
+  color: #6f4b3a;
 }
 .main-container .block-5 .item-23 {
   grid-area: 2/3/3/5;
@@ -516,25 +519,7 @@ header .navigation ul li a {
     display: grid;
     grid-template-columns: 1fr;
     font-family: "KoningDisplay Regular", Times, serif;
-    padding: 0%;
-  }
-  .main-container .cards .card .image-item {
-    display: none;
-    margin: 10%;
-  }
-  .main-container .cards .card .content-item {
-    background-color: rgb(250, 248, 244);
-    padding: 0%;
-    display: grid;
-  }
-  .main-container .cards .card .content-item .activity {
-    font-size: 5vw;
-    width: 100%;
-    padding: 4%;
-    font-family: "KoningDisplay Regular", sans-serif;
-  }
-  .main-container .cards .card .content-item .activity-hour {
-    display: none;
+    padding: 2%;
   }
 }
 
