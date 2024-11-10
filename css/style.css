@@ -521,6 +521,10 @@ header .navigation ul li a {
     font-family: "KoningDisplay Regular", Times, serif;
     padding: 2%;
   }
+  .main-container .cards .card .content-item .activity {
+    font-size: 4vw;
+    padding: 4%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

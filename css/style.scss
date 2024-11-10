@@ -763,27 +763,27 @@ font-family: Arial, Helvetica, sans-serif;
             font-family: "KoningDisplay Regular", Times, serif;
             padding: 2%;
             .card{
-                //.image-item{
+                .image-item{
                 //     display: none;
-                //     // margin: 10%;
-                //}
-                // .content-item{
+                //  margin: 10%;
+                }
+                .content-item{
                 //     background-color:rgb(250, 248, 244);
                 //     // border-top: 2px solid #6f4b3a;
                 //     padding: 0%;
                 //     display: grid;
                     
                     
-                //     .activity{
-                //         font-size: 4vw;
+                    .activity{
+                        font-size: 4vw;
                 //         width: 100%;
-                //         padding: 4%;
+                        padding: 4%;
                 //         font-family:"KoningDisplay Regular",sans-serif;
-                //     }
+                    }
                 //     .activity-hour{
                 //         display: none;
                 //     }
-                // }
+                }
             }
         }
     }
