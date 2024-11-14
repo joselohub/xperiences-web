@@ -770,6 +770,13 @@ font-family: Arial, Helvetica, sans-serif;
         .block-1{
             display: block;
         }
+        .block-2{
+            .item-6{
+                h2{
+                    font-size: 2rem;
+                }
+            }
+        }
         .item-7h2{
             padding: 8%;
             font-size: 2rem;
@@ -778,7 +785,7 @@ font-family: Arial, Helvetica, sans-serif;
             display: grid;
             grid-template-columns: 1fr;
             font-family: "KoningDisplay Regular", Times, serif;
-            padding: 2%;
+            padding: 5%;
             .card{
                 .image-item{
                 //     display: none;
@@ -800,6 +807,25 @@ font-family: Arial, Helvetica, sans-serif;
                 //     .activity-hour{
                 //         display: none;
                 //     }
+                }
+            }
+        }
+        .block-4{
+            .item-h2{
+                font-size: 2rem;
+            }
+        }
+        .block-6{
+            .activityDescription{
+                h2{
+                    font-size: 2rem;
+                }
+            }
+        }
+        .block-7{
+            .item-36{
+                h2{
+                    font-size: 2rem;
                 }
             }
         }

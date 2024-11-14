@@ -533,6 +533,9 @@ header .navigation ul li a {
   .main-container .block-1 {
     display: block;
   }
+  .main-container .block-2 .item-6 h2 {
+    font-size: 2rem;
+  }
   .main-container .item-7h2 {
     padding: 8%;
     font-size: 2rem;
@@ -541,11 +544,20 @@ header .navigation ul li a {
     display: grid;
     grid-template-columns: 1fr;
     font-family: "KoningDisplay Regular", Times, serif;
-    padding: 2%;
+    padding: 5%;
   }
   .main-container .cards .card .content-item .activity {
     font-size: 4vw;
     padding: 4%;
+  }
+  .main-container .block-4 .item-h2 {
+    font-size: 2rem;
+  }
+  .main-container .block-6 .activityDescription h2 {
+    font-size: 2rem;
+  }
+  .main-container .block-7 .item-36 h2 {
+    font-size: 2rem;
   }
 }
 
