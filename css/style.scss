@@ -81,7 +81,7 @@ font-family: Arial, Helvetica, sans-serif;
             
             span{
                 color: white;
-                font-size: 5rem;
+                font-size: 4vw;
                 margin: 5%;
                 font-family: "KoningDisplay Regular", Times, serif;
 
@@ -553,6 +553,9 @@ font-family: Arial, Helvetica, sans-serif;
                 display: grid;
                 justify-self: center;
                 align-items: center;
+                span{
+                    font-size: 7vw;
+                }
 
             }
             .item-3{
@@ -750,6 +753,7 @@ font-family: Arial, Helvetica, sans-serif;
             width: 50%;
         }
         .navigation{
+            margin: 0;
             ul{
                 display: block;
                 padding: 0;
@@ -763,6 +767,9 @@ font-family: Arial, Helvetica, sans-serif;
         
     }
     .main-container{
+        .block-1{
+            display: block;
+        }
         .item-7h2{
             padding: 8%;
             font-size: 2rem;

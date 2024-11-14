@@ -64,7 +64,7 @@ header .navigation ul li a {
 }
 .main-container .block-1 .item-2 span {
   color: white;
-  font-size: 5rem;
+  font-size: 4vw;
   margin: 5%;
   font-family: "KoningDisplay Regular", Times, serif;
 }
@@ -442,6 +442,9 @@ header .navigation ul li a {
     justify-self: center;
     align-items: center;
   }
+  .main-container .block-1 .item-2 span {
+    font-size: 7vw;
+  }
   .main-container .block-1 .item-3 {
     display: none;
   }
@@ -517,12 +520,18 @@ header .navigation ul li a {
   header .logo-img {
     width: 50%;
   }
+  header .navigation {
+    margin: 0;
+  }
   header .navigation ul {
     display: block;
     padding: 0;
   }
   header .navigation ul li a {
     font-size: 1rem;
+  }
+  .main-container .block-1 {
+    display: block;
   }
   .main-container .item-7h2 {
     padding: 8%;
