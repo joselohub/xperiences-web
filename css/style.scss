@@ -79,7 +79,7 @@ font-family: Arial, Helvetica, sans-serif;
             justify-self: center;
             align-items: center;
             
-            span{
+            h2{
                 color: white;
                 font-size: 4vw;
                 margin: 5%;
@@ -553,7 +553,7 @@ font-family: Arial, Helvetica, sans-serif;
                 display: grid;
                 justify-self: center;
                 align-items: center;
-                span{
+                h2{
                     font-size: 7vw;
                 }
 
@@ -827,7 +827,9 @@ font-family: Arial, Helvetica, sans-serif;
                 h2{
                     font-size: 2rem;
                 }
+
             }
+           
         }
     }
 }

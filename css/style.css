@@ -62,7 +62,7 @@ header .navigation ul li a {
   justify-self: center;
   align-items: center;
 }
-.main-container .block-1 .item-2 span {
+.main-container .block-1 .item-2 h2 {
   color: white;
   font-size: 4vw;
   margin: 5%;
@@ -442,7 +442,7 @@ header .navigation ul li a {
     justify-self: center;
     align-items: center;
   }
-  .main-container .block-1 .item-2 span {
+  .main-container .block-1 .item-2 h2 {
     font-size: 7vw;
   }
   .main-container .block-1 .item-3 {
