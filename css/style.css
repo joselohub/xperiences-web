@@ -335,7 +335,6 @@ header .navigation ul li a {
   padding: 30px;
 }
 .main-container .block-6 .activityDescription .activity-content .img-content {
-  width: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -509,17 +508,13 @@ header .navigation ul li a {
     display: block;
   }
   .main-container .block-7 .item-37 button {
-    margin: 5%;
-  }
-  .main-container .block-7 .images7 {
-    display: block;
-    align-items: center;
-    justify-content: center;
+    margin: 3%;
   }
   .main-container .block-7 .images7 .item {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2%;
   }
 }
 @media only screen and (max-width: 455px) {
@@ -561,6 +556,9 @@ header .navigation ul li a {
   }
   .main-container .block-6 .activityDescription h2 {
     font-size: 2rem;
+  }
+  .main-container .block-6 .activityDescription .activity-content .img-content img {
+    width: none;
   }
   .main-container .block-7 .item-36 h2 {
     font-size: 2rem;
