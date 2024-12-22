@@ -34,7 +34,7 @@ header{
     grid-template-columns: 1fr 2fr;
 
     .logo-img{
-        width: 50%;
+        width: 60%;
     }
 
     .navigation{
@@ -190,24 +190,27 @@ font-family: Arial, Helvetica, sans-serif;
         }
         
     } 
-    // .buttom-item-17{
-    //     grid-area: auto/1/auto/4;
-    //     display: grid;
-    //     justify-content: center;
-    //     margin: 8%;
-    //     .block-button{
 
-    //         width: 100%;
-    //         color: rgb(255,255,255);
-    //         background-color: rgb(149,116,69);
-    //         border: none;
-    //         border-radius: 5px;
-    //         padding: 5px 30px 5px 30px;
-    //         font-size:1.8rem ;
+    .buttom-item-17{
+        grid-area: auto/1/auto/4;
+        display: grid;
+        justify-content: center;
+        margin-bottom: 8%;
+        .block-button{
             
+            width: 100%;
+            background-color: rgb(149,116,69);
+            border: none;
+            border-radius: 5px;
+            padding: 5px 30px 5px 30px;
+            font-size:1.8rem ;
             
-    //     }
-    // }
+            a{
+                color: rgb(255,255,255);
+                text-decoration: none;
+            }
+        }
+    }
     
     
 
@@ -276,7 +279,7 @@ font-family: Arial, Helvetica, sans-serif;
             align-items: center;
             margin: 5%;
             img{
-                width: 300px;
+                width: 500px;
             }
         }
         .item-22{
@@ -676,12 +679,7 @@ font-family: Arial, Helvetica, sans-serif;
                 .activity-content{
                     display: grid;
                     grid-template-columns: 1fr;
-                    .img-content{
 
-                    }
-                    .text-content{
-
-                    }
                 }
             }
         }
@@ -757,7 +755,7 @@ font-family: Arial, Helvetica, sans-serif;
 @media only screen and (max-width: 455px){
     header{
         .logo-img{
-            width: 50%;
+            width: 70%;
         }
         .navigation{
             margin: 0;
@@ -776,6 +774,13 @@ font-family: Arial, Helvetica, sans-serif;
     .main-container{
         .block-1{
             display: block;
+            .item-2{
+                margin-bottom: 40px;
+                padding: 50px 0 50px 0;
+                h2{
+                    font-size: 3rem;
+                }
+            }
         }
         .block-2{
             .item-6{
@@ -794,10 +799,10 @@ font-family: Arial, Helvetica, sans-serif;
             font-family: "KoningDisplay Regular", Times, serif;
             padding: 5%;
             .card{
-                .image-item{
+               // .image-item{
                 //     display: none;
                 //  margin: 10%;
-                }
+                //}
                 .content-item{
                 //     background-color:rgb(250, 248, 244);
                 //     // border-top: 2px solid #6f4b3a;
@@ -806,9 +811,10 @@ font-family: Arial, Helvetica, sans-serif;
                     
                     
                     .activity{
-                        font-size: 4vw;
+                        font-size: 5vw;
                 //         width: 100%;
                         padding: 4%;
+
                 //         font-family:"KoningDisplay Regular",sans-serif;
                     }
                 //     .activity-hour{
