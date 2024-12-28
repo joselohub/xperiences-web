@@ -566,6 +566,9 @@ header .navigation ul li a {
     padding: 8%;
     font-size: 2rem;
   }
+  .main-container .buttom-item-17 {
+    margin-top: 35px;
+  }
   .main-container .cards {
     display: grid;
     grid-template-columns: 1fr;
