@@ -106,7 +106,7 @@ font-family: Arial, Helvetica, sans-serif;
                 border: none;
                 border-radius: 5px;
                 padding: 5px 30px 5px 30px;
-                font-size:1.8rem ;
+                font-size:1.5rem ;
                 color: rgb(255,255,255);
                 text-decoration: none;
                 
@@ -260,7 +260,7 @@ font-family: Arial, Helvetica, sans-serif;
             border: none;
             border-radius: 5px;
             padding: 5px 30px 5px 30px;
-            font-size:1.8rem ;
+            font-size:1.5rem ;
             color: rgb(255,255,255);
             text-decoration: none;
         }
@@ -516,7 +516,7 @@ font-family: Arial, Helvetica, sans-serif;
                     border: none;
                     border-radius: 5px;
                     padding: 5px 30px 5px 30px;
-                    font-size:1.8rem ;
+                    font-size:1.5rem ;
                     color: rgb(255,255,255);
                     text-decoration: none;
                     
@@ -541,9 +541,7 @@ font-family: Arial, Helvetica, sans-serif;
                 font-size: 3rem;
                 color: #6f4b3a;
             }
-            P{
-                font-size: 1.3rem;
-            }
+
         }
         .item-37{
             grid-area: 1/2/2/3;
@@ -558,7 +556,7 @@ font-family: Arial, Helvetica, sans-serif;
                     background-color: rgb(149,116,69);
                     border: none;
                     border-radius: 5px;
-                    font-size:1.8rem;
+                    font-size:1.5rem;
                     padding: 3%;
                     color: rgb(255,255,255);
                     text-decoration: none;
@@ -855,6 +853,9 @@ footer{
         
     }
     .main-container{
+        p{
+            font-size: 16px;
+        }
         .block-1{
             display: block;
             .item-2{
@@ -897,6 +898,9 @@ footer{
                         img{
                         width: none;
                         }
+                    }
+                    .text-content{
+                        padding: 0;
                     }
                 }
             }
