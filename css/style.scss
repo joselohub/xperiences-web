@@ -885,15 +885,31 @@ footer{
 
         .block-4{
             .item-h2{
+                display: grid;
+            
+                text-align: center;
+
                 font-size: 2rem;
+                
+                
+     
             }
         }
         .block-6{
             .activityDescription{
                 h2{
                     font-size: 2rem;
+                    text-align: center;
                 }
+                .itinerarios{
+                    
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding: 30px;
+                }  
+                
                 .activity-content{
+                    padding: 0,10,0,10;
                     .img-content{
                         img{
                         width: none;

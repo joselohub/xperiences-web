@@ -637,10 +637,21 @@ footer nav ul li a {
     margin-top: 35px;
   }
   .main-container .block-4 .item-h2 {
+    display: grid;
+    text-align: center;
     font-size: 2rem;
   }
   .main-container .block-6 .activityDescription h2 {
     font-size: 2rem;
+    text-align: center;
+  }
+  .main-container .block-6 .activityDescription .itinerarios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+  }
+  .main-container .block-6 .activityDescription .activity-content {
+    padding: 0, 10, 0, 10;
   }
   .main-container .block-6 .activityDescription .activity-content .img-content img {
     width: none;
